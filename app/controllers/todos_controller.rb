@@ -7,8 +7,8 @@ class TodosController < ApplicationController
   end
 
   def delete
-  	@todo_items = Todo.last
-  	@todo_items.delete
+  	@todo_delete = Todo.last
+  	@todo_delete.delete
   	redirect_to :action => 'index'
 
   end
