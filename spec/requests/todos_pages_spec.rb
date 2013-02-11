@@ -10,8 +10,13 @@ describe "TodosPages" do
     it "should have title tag" do
     	visit '/todos/index'
     	page.should have_selector 'title'
-    end  					 
+    end  
   end
+
+  # describe "after saving Todo" do	
+  #   before { click_button ('input[type=submit]') }   
+  #   it { should have_selector('div.alert.alert-success', text: 'Todo Successfully Created') }
+  # end
 
 
 end

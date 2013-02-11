@@ -18,7 +18,7 @@ class TodosController < ApplicationController
    unless todo.valid?
      flash[:error] = todo.errors.full_messages.join("<br>").html_safe
    else
-     flash[:success] = "Successfully added a todo item "  
+     flash[:success] = "Todo Successfully Created"  
    end
   redirect_to :action => 'index'
 end

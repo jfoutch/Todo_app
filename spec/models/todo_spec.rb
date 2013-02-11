@@ -7,12 +7,12 @@ describe Todo do
     it { should_not be_valid }
   end
 
-  #describe "content length" do
-    #if 	Todo.length > 20 
-    	#it { should_not be_valid }
-   # end
- # end
- 
+ describe "with content that is too long" do
+  	
+     before { @new_todo = "a" * 25 }
+     it { should_not be_valid }
+   end
+
 end
 
 
