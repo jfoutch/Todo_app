@@ -7,7 +7,12 @@ describe Todo do
     it { should_not be_valid }
   end
 
-	
+  #describe "content length" do
+    #if 	Todo.length > 20 
+    	#it { should_not be_valid }
+   # end
+ # end
+ 
 end
 
 
