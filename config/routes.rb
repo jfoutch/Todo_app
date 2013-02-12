@@ -1,4 +1,5 @@
 TodoApp::Application.routes.draw do
+  root :to => "todos#index"
   match "todos/index" => "todos#index", :as => :index
   match "todos/delete" => "todos#delete", :as => :delete
   match "todos/add" => "todos#add", :via => :post

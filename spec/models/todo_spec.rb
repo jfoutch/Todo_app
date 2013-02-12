@@ -7,8 +7,7 @@ describe Todo do
     it { should_not be_valid }
   end
 
- describe "with content that is too long" do
-  	
+ describe "with content that is too long" do	
      before { @new_todo = "a" * 25 }
      it { should_not be_valid }
    end
