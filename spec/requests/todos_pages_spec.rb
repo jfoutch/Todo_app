@@ -9,18 +9,18 @@ describe "TodosPages" do
     it "should have title tag" do   	
     	page.should have_selector 'title'
     end  
-     it "should delete a todo" do   	
-         expect { click_link "Delete last todo" }.to change(Todo, :count).by(-1)
-         response.should redirect_to :action => 'index'
-     end
+     # it "should delete a todo and redirect to index" do   	
+     #     expect { click_link "Delete last todo" }.to change(Todo, :count).by(-1)
+     #     response.should redirect_to :action => 'index'
+     # end
+     it "should have a success message" do
+        pending
+      end
+
+      it "should have a error message" do
+        pending
+      end
+
   end
-
-
-
-  # describe "after saving Todo" do	
-  #   before { click_button ('input[type=submit]') }   
-  #   it { should have_selector('div.alert.alert-success', text: 'Todo Successfully Created') }
-  #  end
-
 
 end

@@ -1,11 +1,10 @@
-<title>Shared Todo App </title>
+<% @title = "Todo App" %>
 <div class="container"> 
 	<div class="row">
 	 <div class='span6' >
 
       <h1 class="hero-unit">Simple Todo App</h1>
       
-<hr>
 
       <p>All your todos here</p>
 			<%= form_for @new_todo, :url => { :action => "add" }  do |f|  %>
